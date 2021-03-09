@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="common/bootstrap-4.6.0/css/bootstrap.min.css">
+		<script src="common/js/jquery-3.5.1.min.js"></script>
+		<script src="common/bootstrap-4.6.0/js/bootstrap.bundle.min.js"></script>
+		<script src="common/bootstrap-4.6.0/js/bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="card">
+			<div class="card-header">
+				JavaScript Operators
+			</div>
+			<div class="card-body">
+				<script type="text/javascript">
+					let x = 2;
+					let result = x ** 3;
+					console.log("result: ", result);
+					
+					x **= 4;
+					console.log("x: ", x);
+				</script>
+				
+				<script>
+					let var1 = 3;
+					console.log(typeof var1); //number
+					
+					let var2 = "JavaScript";
+					console.log(typeof var2); //string
+					
+					let var3 = true;
+					console.log(typeof var3); //boolean
+					
+					let var4 = {name:"Javascript"};
+					console.log(typeof var4); //object
+					
+					let var5 = function() {};
+					console.log(typeof var5); //function
+					
+					let var6 = () => {};
+					console.log(typeof var6); //function					
+				</script>
+				
+				<script>
+					let var7 = 3;
+					let var8 = "3";
+					
+					console.log(var7==var8);
+					console.log(var7===var8);
+					
+					console.log(var7 != var8);
+					console.log(var7 !== var8);
+				</script>
+				
+				<script>
+					//부정의 값 || 값 => 값
+					console.log("" || "abc");
+					console.log(null || "abc");					
+					var var9;
+					console.log( var9 || 5);
+					console.log(0 || 5);
+					console.log(false || 5);
+					
+					//긍정의 값 || 값 => 긍정의 값
+					console.log("a" || "abc");
+					console.log(1|| "abc");
+					console.log(true || "abc");
+					
+					//부정의 값 && 값 => 부정의 값
+					console.log("" && "abc");
+					console.log(null && "abc");
+					console.log(false && "abc");
+					
+					//긍정의 값 && 값 => 값
+					console.log("a" && "abc");
+					console.log(1 && "abc");
+					console.log(true && "abc");
+					
+					var var10;
+					console.log(typeof var10);
+				</script>
+			</div>
+		</div>
+	</body>
+</html>
